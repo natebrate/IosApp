@@ -37,29 +37,20 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             return
         }; do {
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound))
-            pauseBtn.isEnabled = false
-            stopBtn.isEnabled = false
-            audioPlayer.delegate = self
             print("song found")
+            audioPlayer.enableRate = true
         } catch {
             print("Song not found")
         }
-        audioPlayer.enableRate = true
+//        audioPlayer.enableRate = true
     }
-    
-    @IBAction func sliderMoved(_ sender: UISlider) {
-        //This changes the text in the label.
-        speedLabel.text = String(format: "Speed: %.2f", slider.value)
-        //This changes the rate or speed the audio should be played at.
-        audioPlayer.rate = slider.value
-    }
-    
     
     @IBAction func audioPlayer(_ sender: UIButton) {
         //fetch the song
         soundFiles()
         //play the sound
         audioPlayer.play()
+        audioPlayer.enableRate = true
         playBtn.isEnabled = false
         
         if !pauseBtn.isEnabled {
@@ -88,6 +79,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         pauseBtn.isEnabled = true
         playBtn.isEnabled = false
         stopBtn.isEnabled = false
+    }
+    
+  
+    @IBAction func sliderChange(_ sender: UISlider) {
+        audioPlayer.enableRate = true
+        speedLabel.text = "\(String(format: "Speed: %.2f", sender.value))"
+        audioPlayer.rate = Float(sender.value)
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
