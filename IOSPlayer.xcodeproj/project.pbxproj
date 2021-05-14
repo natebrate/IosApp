@@ -16,6 +16,7 @@
 		270A0A90225D064CFC100FDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A0A797AC57605A0966008 /* SceneDelegate.swift */; };
 		270A0E10896DC2E817763CCC /* IOSPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A0BAEFB2E9507AA591A14 /* IOSPlayerUITests.swift */; };
 		270A0FB97B11CAD7722FDF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A0C5A8924CAA2FC787204 /* AppDelegate.swift */; };
+		466D47BF264F157B006B00DF /* SoundGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466D47BE264F157B006B00DF /* SoundGet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		270A0C5A8924CAA2FC787204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		270A0F3B84D91ABEF149357D /* IOSPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270A0F7975B8BEBB4886BE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		466D47BE264F157B006B00DF /* SoundGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundGet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				270A0484BFAC44BC2BF5842E /* LaunchScreen.storyboard */,
 				270A0C5A8924CAA2FC787204 /* AppDelegate.swift */,
 				270A0A797AC57605A0966008 /* SceneDelegate.swift */,
+				466D47BE264F157B006B00DF /* SoundGet.swift */,
 				270A02B529EA49AAC0BFA6FB /* ViewController.swift */,
 				270A09FB05D7CCCE3FF61141 /* Main.storyboard */,
 				270A095CC2525C83CAA8213F /* suga_boom_boom.mp3 */,
@@ -267,6 +270,7 @@
 			files = (
 				270A0FB97B11CAD7722FDF5D /* AppDelegate.swift in Sources */,
 				270A0A90225D064CFC100FDB /* SceneDelegate.swift in Sources */,
+				466D47BF264F157B006B00DF /* SoundGet.swift in Sources */,
 				270A0A26D87ADC7D91F1C71B /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
