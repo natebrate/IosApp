@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		270A0100954646AA0EE546D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270A0899ABABC1CB50BCF114 /* Assets.xcassets */; };
+		270A0121527DC5E052AA3231 /* suga_boom_boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 270A095CC2525C83CAA8213F /* suga_boom_boom.mp3 */; };
 		270A035B512AF4AD5B224B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270A09FB05D7CCCE3FF61141 /* Main.storyboard */; };
 		270A051B2D06E530F0A9F0F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270A0484BFAC44BC2BF5842E /* LaunchScreen.storyboard */; };
 		270A0707DD6C9A9E70D8BC50 /* IOSPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A0A497183EE95B3AD6CDB /* IOSPlayerTests.swift */; };
@@ -43,6 +44,7 @@
 		270A07685101DF8169398EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		270A087FF05239AF0F1912C6 /* IOSPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		270A0899ABABC1CB50BCF114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		270A095CC2525C83CAA8213F /* suga_boom_boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = suga_boom_boom.mp3; sourceTree = "<group>"; };
 		270A0A497183EE95B3AD6CDB /* IOSPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSPlayerTests.swift; sourceTree = "<group>"; };
 		270A0A797AC57605A0966008 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		270A0BAEFB2E9507AA591A14 /* IOSPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSPlayerUITests.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				270A0A797AC57605A0966008 /* SceneDelegate.swift */,
 				270A02B529EA49AAC0BFA6FB /* ViewController.swift */,
 				270A09FB05D7CCCE3FF61141 /* Main.storyboard */,
+				270A095CC2525C83CAA8213F /* suga_boom_boom.mp3 */,
 			);
 			path = IOSPlayer;
 			sourceTree = "<group>";
@@ -197,7 +200,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 270A08D1DD46C6FBAE637F75;
 			productRefGroup = 270A040BB81D93B48EDB5F5D /* Products */;
@@ -219,6 +224,7 @@
 				270A0100954646AA0EE546D5 /* Assets.xcassets in Resources */,
 				270A051B2D06E530F0A9F0F7 /* LaunchScreen.storyboard in Resources */,
 				270A035B512AF4AD5B224B27 /* Main.storyboard in Resources */,
+				270A0121527DC5E052AA3231 /* suga_boom_boom.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,8 +468,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -513,6 +518,7 @@
 				270A0B75C1202471C3AFE10A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		270A0AAEED6A60AE53453EC0 /* Build configuration list for PBXNativeTarget "IOSPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				270A07CC35C166615A9F0AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		270A0D96B4E17B49B84EEEFA /* Build configuration list for PBXNativeTarget "IOSPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +536,7 @@
 				270A0C78EC04BAC25F0E3EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
